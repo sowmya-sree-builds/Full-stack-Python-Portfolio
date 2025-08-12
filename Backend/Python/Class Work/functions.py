@@ -81,9 +81,62 @@ def evensum(list1):
     return sum
 list1 = [1,2,3,4,5,6,7,8,9,10]
 print(evensum(list1))
-    
+
+'''with out 
+with 
+postional 
+default 
+with return 
+with out return
+
+function: bloxk of code to perform a specific task again and again in a program
+function with out parameters: 
+keyword arguments: it is used to pass arguments to a functiohn in any order you like, here while calling a function
+you pass arguments along eith the name of the parameters'''
+
+
+def details(name, age, address, course, phno):
+    print(f'hello {name} as of this year you re of age {age} you live at {address}, studying {course} and your contact number is {phno}')    
 
 
 
+# task : 
+# write a keyword args function to print your personal details.
+# details must cover your name,father name,mother name, your btech course , siblings etc...
+
+# def details(name, father, mother, course, siblings):
+#     print(f'hey i am {name} my father name is {father} is my mother name is {mother} is and my btech course{course} is and i have one siblings he is {siblings}')
+
+# details(name = 'sowmya', mother = 'rupa', father = 'nagesh', siblings = 'dhanu', course = 'btech')
+# print(details)
 
 
+# # variable length arguments:
+# #   it is used to pass multiple values to a single parameter in a function
+
+# def number(*num):
+#     m = 1
+#     for i in num:
+#         m *= i
+#     return m
+
+# print(number(1,2,3,4,5))
+
+# def details(*urdetails):
+#     for i in urdetails:
+#         print(i)
+
+# details('sami','vizag',20,987656542,'kavs','ruby')
+
+def details(**urdetails):
+    for i,j in urdetails.items():
+        print(f'{i}:{j}')
+        print(i)
+
+details(name = 'sowmya', age = 23, address = 'vizag')
+
+
+def operations(a,b):
+    return a+b,a-b,a*b,a/b
+add,sub,mul,div = operations(5,3)
+print(add,sub,mul,div)
