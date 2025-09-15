@@ -183,4 +183,6 @@ for i in list:
     if i>fir:
         sec=fir
         fir=i
+    elif i < fir and (sec == fir or i > sec):
+        sec = i
 print(sec)

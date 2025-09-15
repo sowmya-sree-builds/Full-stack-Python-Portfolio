@@ -13,7 +13,6 @@ print(default1())
 nes1 = lambda x: lambda y:x*y
 print(nes1(3)(4))
 
-
 # lambda with no args
 name = lambda:'sowmya'
 print(name())

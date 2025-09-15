@@ -40,6 +40,6 @@ def rev(str):
         return rev(str[1:])+str[0]  
 print(rev('sowmya'))
 
-
+ 
 
 
