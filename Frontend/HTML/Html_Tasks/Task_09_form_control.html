@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+</head>
+<body>
+
+  <h1>Registration Form</h1>
+
+  <!-- form starts here -->
+  <form action="/register" method="post">
+    
+    <!-- Username -->
+    <label for="username">User Name:</label><br>
+    <input type="text" id="username" name="username" placeholder="Enter your user name" required><br><br>
+
+    <!-- Email -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+    <!-- Password -->
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+    <!-- Confirm Password -->
+    <label for="confirm">Confirm Password:</label><br>
+    <input type="password" id="confirm" name="confirm" placeholder="Confirm your password" required><br><br>
+
+
+    <!--Date of birth-->
+    <label for="Date of birth">Date of birth:</label>
+    <input type="date" name="" id=""><br><br>
+
+    <!-- Gender -->
+     <label>Gender:</label>
+     <label for="Male">Male</label>
+     <input type="radio" name="" id="">
+     <label for="Female">Female</label>
+     <input type="radio" name="" id="">
+     <label for="others">others</label>
+     <input type="radio" name="" id=""><br><br>
+    
+    <!-- Address -->
+    <label for="address">Address:</label><br>
+    <textarea id="address" name="address" rows="4" cols="40" placeholder="Enter your full address"></textarea><br><br>
+
+    <!-- State -->
+    <label for="state">State:</label><br>
+    <select id="state" name="state">
+      <option value="">--Select your state--</option>
+      <option value="andhra">Andhra Pradesh</option>
+      <option value="telangana">Telangana</option>
+      <option value="karnataka">Karnataka</option>
+      <option value="tamilnadu">Tamil Nadu</option>
+      <option value="kerala">Kerala</option>
+      <option value="other">Other</option>
+    </select><br><br>
+
+    <!-- Country -->
+    <label for="country">Country:</label><br>
+    <select id="country" name="country">
+      <option value="">--Select your country--</option>
+      <option value="india">India</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+      <option value="other">Other</option>
+    </select><br><br>
+
+    <!-- Submit button -->
+    <input type="submit" value="Register">
+
+  </form>
+
+</body>
+</html>
