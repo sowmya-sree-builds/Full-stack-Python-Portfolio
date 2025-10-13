@@ -1,0 +1,34 @@
+/* h3{
+    color: white;
+    background-color: brown;
+}
+#unique{
+    color:white;
+    background-color:orangered;
+}
+.hindi{
+    color:white;
+    background-color:blueviolet;
+}
+h3,p,h2{
+    color:black;
+    background-color:aqua;
+}
+*{
+    font-size:30px;
+    font-family: 'Courier New', Courier, monospace;
+    color:blue
+} */
+
+.card{
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    border-radius: 10px;
+    background-color: green;
+    text-align:center;
+    margin:5px;
+}
+#spl{
+    background-color:orangered;
+}

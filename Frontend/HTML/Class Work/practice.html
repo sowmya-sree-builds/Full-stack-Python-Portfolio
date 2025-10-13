@@ -3,57 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Html basics</title>
+    <title>HTML Basics Playground</title>
 </head>
-    <h3>This is my document</h3>
-    <nav>
-        <a href="#about">about</a>
-        <a href="#images">images</a>
-        <a href="#Tables">Tables</a>
-        <a href="#lists">Lists</a>
-    </nav>
 
 <body>
+    <p title="this is tool tip">Hover over this </p>
+    <!-- ===================== NAVIGATION LINKS ===================== -->
+    <h3>This is my document</h3>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#images">Images</a>
+        <a href="#tables">Tables</a>
+        <a href="#lists">Lists</a>
+        <a href="#extras">Extra Tags</a>
+        <a href="#forms">Forms</a>
+    </nav>
+
     <main>
+        <!-- ===================== ABOUT SECTION ===================== -->
         <div id="about">
-            i am sowmya sree alla ece student 
+            I am Sowmya Sree Alla, an ECE student.
         </div>
+
+        <!-- ===================== IMAGES SECTION ===================== -->
         <section id="images">
-            <h2>this is zenitsu</h2>
-            <img src="https://thafd.bing.com/th/id/OIP.pTdHN2TmXXSDemOSoPlbZAHaEK?w=312&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="zenitsu jpg"  width="550px" height ="250px">
+            <h2>This is Zenitsu</h2>
+            <!-- img tag displays an image -->
+            <img src="\images\zenitsu.gif" 
+                 alt="Zenitsu jpg" width="450px" height="250px" align="center">
         </section>
 
-        <section id="Tables">
-            <h2>This is tables</h2>
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th>Fun</th>
-                            <th>Num</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>4</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td>Total</td>
-                            <td>6</td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </section>
+        <!-- ===================== TABLES SECTION ===================== -->
+        <section id="tables">
+            <h2>This is Tables</h2>
+            <!-- table tag used to create tables with thead, tbody, tfoot -->
+              <table border="1" cellpadding="10" cellspacing="0">
+                <caption><strong>Student Scores</strong></caption>
+                <thead>
+                <tr>
+                    <th rowspan="2">Student Name</th> <!-- spans 2 rows -->
+                    <th colspan="3">Subjects</th> <!-- spans 3 columns -->
+                </tr>
+                <tr>
+                    <th>Math</th>
+                    <th>Science</th>
+                    <th>English</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Alice</td>
+                    <td>90</td>
+                    <td>85</td>
+                    <td>88</td>
+                </tr>
+                <tr>
+                    <td>Bob</td>
+                    <td>78</td>
+                    <td>92</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>Charlie</td>
+                    <td>95</td>
+                    <td>89</td>
+                    <td>93</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td><strong>Average</strong></td>
+                    <td colspan="3" align="center"><strong>Calculated Later</strong></td>
+                </tr>
+                </tfoot>
+            </table>
+            </body>
+            </html>
 
+        <!-- ===================== LISTS SECTION ===================== -->
         <section id="lists">
-            <h2>this is lists</h2>
-            <h3>unordered lists</h3>
+            <h2>This is Lists</h2>
+            
+            <!-- Unordered Lists (ul) -->
+            <h3>Unordered Lists</h3>
             <ul>
                 <li>disc1</li>
                 <li>disc2</li>
@@ -66,14 +98,9 @@
                 <li>square1</li>
                 <li>square2</li>
             </ul>
-            <ul type="triangle">
-                <li>triangle1</li>
-                <li>triangle2</li>
-            </ul>
-            <h3>Ordered lists</h3>
-            <section id="lists">
-            <h2>This is ordered lists</h2>
 
+            <!-- Ordered Lists (ol) -->
+            <h3>Ordered Lists</h3>
             <!-- Default: numbers -->
             <ol type="1">
                 <li>Item 1</li>
@@ -104,96 +131,137 @@
                 <li>Item ii</li>
             </ol>
         </section>
-         <section id="bookmarks">
+
+        <!-- ===================== BOOKMARKING SECTION ===================== -->
+        <section id="bookmarks">
             <h2>Bookmarking in HTML</h2>
             <p>Click the links below to try bookmarking:</p>
 
             <!-- Internal bookmarks -->
             <h3>Internal Bookmarks (same page)</h3>
-            <a href="#Tables">Go to tables </a>
+            <a href="#tables">Go to tables</a>
             <a href="#lists">Go to lists</a>
             <a href="#images">Go to images</a>
 
-            <!-- External bookmarks (same folder: Class Work) -->
+            <!-- External bookmarks (same folder) -->
             <h3>External Bookmarks (same folder)</h3>
-            <a href="ex2.html">Go to Example.html </a>
-            <a href="example.html">Go to Example.html </a>
+            <a href="ex2.html">Go to ex2.html</a>
+            <a href="example.html">Go to example.html</a>
 
-            <!-- External bookmarks (different folder: Html_Tasks) -->
+            <!-- External bookmarks (different folder) -->
             <h3>External Bookmarks (different folder)</h3>
-            <a href="../Html_Tasks/Task_07_.html#videos">Go to Task_07_.html → images Section</a>
+            <a href="../Html_Tasks/Task_07_Multimedia.html">Go to Task_07_Multimedia.html → images Section</a>
         </section>
+
+        <!-- ===================== EXTRA HTML TAGS SECTION ===================== -->
+        <section id="extras">
+            <h2>Extra HTML Tags</h2>
+
+            <!-- <pre> preserves spacing and line breaks exactly -->
+            <h3>Preformatted Text</h3>
+            <pre>
+Line 1    Column 1
+Line 2    Column 2
+            </pre>
+
+            <!-- <iframe> embeds another webpage -->
+            <h3>Iframe Example (Embedding a website)</h3>
+            <iframe src="https://www.wikipedia.org" width="500" height="300" title="Wikipedia"></iframe>
+
+            <!-- <embed> can embed media like PDF or audio -->
+            <h3>Embed Example (Embedding a PDF)</h3>
+            <embed src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" 
+                   width="500" height="300" type="application/pdf">
+
+            <!-- Audio Example -->
+            <h3>Audio Example</h3>
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <!-- Video Example -->
+            <h3>Video Example</h3>
+            <video width="320" height="240" controls>
+                <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <!-- Horizontal Rule & Line Break -->
+            <h3>Horizontal Rule & Line Break</h3>
+            <p>First line <br> Second line (after line break)</p>
+            <hr>
+            <p>Text after horizontal rule</p>
+        </section>
+
+        <!-- ===================== FORMS SECTION ===================== -->
         <section id="forms">
-                    
-        <h2>HTML Forms Practice</h2>
-        
-        <form action="#" method="post">
+            <h2>HTML Forms Practice</h2>
+            <!-- form tag contains inputs, labels, buttons -->
+            <form action="#" method="post">
 
-            <!-- Text Input -->
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+                <!-- Text Input -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
 
-            <!-- Password Input -->
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+                <!-- Password Input -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
 
-            <!-- Email Input -->
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+                <!-- Email Input -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
 
-            <!-- Number Input -->
-            <label for="age">Age:</label>
-            <input type="number" id="age" name="age" min="1" max="100"><br><br>
+                <!-- Number Input -->
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="1" max="100"><br><br>
 
-            <!-- Radio Buttons -->
-            <p>Gender:</p>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label><br><br>
+                <!-- Radio Buttons -->
+                <p>Gender:</p>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+                <!-- Checkboxes -->
+                <p>Interests:</p>
+                <input type="checkbox" id="coding" name="interest" value="coding">
+                <label for="coding">Coding</label>
+                <input type="checkbox" id="music" name="interest" value="music">
+                <label for="music">Music</label>
+                <input type="checkbox" id="sports" name="interest" value="sports">
+                <label for="sports">Sports</label><br><br>
 
-            <!-- Checkboxes -->
-            <p>Interests:</p>
-            <input type="checkbox" id="coding" name="interest" value="coding">
-            <label for="coding">Coding</label>
-            <input type="checkbox" id="music" name="interest" value="music">
-            <label for="music">Music</label>
-            <input type="checkbox" id="sports" name="interest" value="sports">
-            <label for="sports">Sports</label><br><br>
+                <!-- Textarea -->
+                <label for="bio">Bio:</label><br>
+                <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Write something about yourself"></textarea><br><br>
 
-            <!-- Textarea -->
-            <label for="bio">Bio:</label><br>
-            <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Write something about yourself"></textarea><br><br>
+                <!-- Dropdown / Select -->
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="india">India</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                    <option value="australia">Australia</option>
+                </select><br><br>
 
-            <!-- Dropdown / Select -->
-            <label for="country">Country:</label>
-            <select id="country" name="country">
-            <option value="india">India</option>
-            <option value="usa">USA</option>
-            <option value="uk">UK</option>
-            <option value="australia">Australia</option>
-            </select><br><br>
+                <!-- File Upload -->
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume"><br><br>
 
-            <!-- File Upload -->
-            <label for="resume">Upload Resume:</label>
-            <input type="file" id="resume" name="resume"><br><br>
+                <!-- Date Input -->
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob"><br><br>
 
-            <!-- Date Input -->
-            <label for="dob">Date of Birth:</label>
-            <input type="date" id="dob" name="dob"><br><br>
+                <!-- Color Picker -->
+                <label for="favcolor">Favorite Color:</label>
+                <input type="color" id="favcolor" name="favcolor"><br><br>
 
-            <!-- Color Picker -->
-            <label for="favcolor">Favorite Color:</label>
-            <input type="color" id="favcolor" name="favcolor"><br><br>
-
-            <!-- Submit & Reset Buttons -->
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
-
+                <!-- Submit & Reset Buttons -->
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
             </form>
         </section>
 
     </main>
-    
 </body>
 </html>

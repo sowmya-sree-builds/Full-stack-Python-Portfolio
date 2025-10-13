@@ -1,0 +1,92 @@
+Commands
+>>>\sql
+>>>\c root@localhost
+password -yes or no
+to display the databases in server
+>>> SHOW DATABASES;
+
+DDL-data definition language
+Create --
+drop
+truncate
+
+to create a database
+>>>Create Databases;
+
+to use a database
+>>>USE database_name;
+
+To display the tables
+>>>Show tables;
+
+Create a table
+
+>>>CREATE TABLE TABLE_NAME(
+>>>COLUMN_NAME DATATYPE;
+>>>COLUMN_NAME DATATYPE;
+>>>);
+
+;-used to specify the command has ended
+
+>>>Create Taable 66r(
+SNO, INT,
+NAME VARCHAR(100),
+AGE INT,
+MARKS INT
+);
+
+Datatypes -- it will check the value of which type it is
+
+INT		--- WILL PASS WHOLE NUMBER -- 4 BYTES -- 2**31
+FLOAT		--- will return values after point .00000 -- 4 bytes
+DOUBLE		--- will return values after point .00000000000 -- 8 bytes -- 2**63
+DECIMAL(S,P)	--- will decide the number of digits we want after a point
+CHAR(SIZE)	--- fixed size -- max (0 - 255)
+VARCHAR(SIZE)	--- will remove the unnecessary space after allocating the required -- max (0 - 255) if exceeds we use nvarchar,nchar...
+DATE		--- date is stored in the format of 'yyyy-mm-dd'
+TIME		--- time 'HH-MM-SS'
+
+
+
+>>>Select * From
+
+>>> To Show the data in table:
+
+>>>Select * From TABLE_NAME;
+
+>>>desc 66r;
+
+>>>insert into 66r(sno) values(1);
+
+>>>Select * From TABLE_NAME;
+
+
+Day-4
+use 66r;
+show tables;
+select * from batch;
+delete from batch where marks==99;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
