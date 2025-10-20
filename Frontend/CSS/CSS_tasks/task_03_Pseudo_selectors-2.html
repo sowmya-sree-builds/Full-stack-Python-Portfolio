@@ -1,0 +1,33 @@
+<!-- Task2: • Make a parent <ul> with nested <ul> inside it.
+     • Apply background color only to the direct <li> children of the parent <ul>, not the nested ones. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 - Nested Lists</title>
+    <style>
+        ul > li {
+            background-color: red;
+            padding: 5px;
+            margin: 3px 0;
+        }
+    </style>
+</head>
+    <body>
+        <center><h1>Task with Lists</h1></center>
+
+        <ul>
+            <li>Humans
+                <ul>
+                    <li>Lion</li>
+                    <li>Elephant</li>
+                    <li>Tiger</li>
+                </ul>
+            </li>
+            <li>Birds</li>
+            <li>Reptiles</li>
+        </ul>
+    </body>
+</html>
