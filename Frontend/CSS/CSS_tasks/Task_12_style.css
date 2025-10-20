@@ -1,0 +1,23 @@
+span {
+      display: inline-flex;
+      align-items: center;
+      border: 3px solid black;
+      width: 180px;
+      height: 200px;
+      margin: 8px;
+    }
+
+    span img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    span:nth-child(1) { border: 3px solid black; }
+    span:nth-child(2) { border: 3px dotted red; }
+    span:nth-child(3) { border: 3px dashed blue; }
+    span:nth-child(4) { border: 3px double green; }
+    span:nth-child(5) { border: 3px groove purple; }
+    span:nth-child(6) { border: 3px ridge orange; }
+    span:nth-child(7) { border: 3px inset brown; }
