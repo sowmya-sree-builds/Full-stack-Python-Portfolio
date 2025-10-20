@@ -1,0 +1,37 @@
+<!-- Task1: 
+
+• Create a <div> with 3 paragraphs and 1 <span> inside a 
+paragraph.  
+• Apply red color only to the span inside the div (not outside)  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div span {
+            color: rgb(136, 0, 255);
+            background-color: rgb(156, 253, 0);
+        }
+    </style>
+</head>
+    <body>
+
+        <div>
+            <p>The old house at the end of the street had been empty for years.</p>
+
+            <p>
+                <span>At night, the windows seemed to watch anyone who walked past.</span>
+                One evening, Mira felt a chill as she stepped inside.
+            </p>
+
+            <p>The air smelled of dust and something sweet she couldnot name.</p>
+        </div>
+
+        <p>
+            This is a span <span>outside the div</span>, so it should not be red.
+        </p>
+
+    </body>
+</html>
