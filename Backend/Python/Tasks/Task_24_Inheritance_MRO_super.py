@@ -7,6 +7,8 @@ class Employee:
         self.name = name
         self.emp_id = emp_id
 
+
+
 class Developer(Employee):
     def __init__(self, name, emp_id, programming_language):
         super().__init__(name, emp_id)

@@ -20,6 +20,8 @@ h3,p,h2{
     color:blue
 } */
 
+/* Basic Selectors */
+
 .card{
     width: 200px;
     height: 200px;
@@ -32,3 +34,10 @@ h3,p,h2{
 #spl{
     background-color:orangered;
 }
+
+/* Combination selectors/combinators */
+/* 
+
+
+
+*/

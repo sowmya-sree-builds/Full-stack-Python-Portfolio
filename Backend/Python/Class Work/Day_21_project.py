@@ -1,32 +1,28 @@
-class student:
-    def __init__(self,name,roll_number,marks):
-        self.name=name
-        self.roll_number=roll_number
-        self._marks={}
+class Student:
+    def __init__(self, name, roll_number, marks=None):
+        self.name = name
+        self.roll_number = roll_number
+        self._marks = {} if marks is None else marks
 
-    def add_mark(self,subject,mark):
-        if mark >= 0 and mark <=100:
+    def add_mark(self, subject, mark):
+        if 0 <= mark <= 100:
             self._marks[subject] = mark
         else:
             print('Invalid mark for', subject)
-                 
+
     def calculate_total(self):
-        total=0
+        total = 0
         for subject in self._marks:
             total += self._marks[subject]
-            global total
         return total
-    
+
     def calculate_average(self):
-        count=0
-        for i in self._marks:
-            count+=1
-        if count == 0:
+        if not self._marks:  
             return 0
-        
-        return total/count
-        
-    
-ria=student('ria',12,67)
-print(ria.add_mark('maths',10))
-print(ria.calculate_average())
+        total = self.calculate_total()
+        return total / len(self._marks)
+
+
+ria = Student('Ria', 12, 67)
+ria.add_mark('Maths', 10)
+print("Average:", ria.calculate_average())

@@ -41,9 +41,6 @@ nums = [1, 2, 3, 4, 5]
 cubes = list(map(lambda x: x ** 3, nums))
 print(cubes)  # [1, 8, 27, 64, 125]
 
-
-
-
 # 4 Reduce with Lambda: Use reduce() and lambda to find the product of [2, 3, 4, 5].
 from functools import reduce
 nums = [2, 3, 4, 5]

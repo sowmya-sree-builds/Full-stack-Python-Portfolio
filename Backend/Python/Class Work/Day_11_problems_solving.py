@@ -1,107 +1,193 @@
-# OOPs(object oriented programming): It is a ohenomemon of creating objects and running the program using those object.
-# it is a paradigm
-# Class: blueprint for our object creation
-# object: simulating a real life thing in our program. / instance of a class
-# we create objects outside the class in python
-# eg:it can be a car,a chair
-# four pillars of oops:
-# Encapsulation: Grabbing of data and functions inside a class.
-# abstraction: hiding the unecessary details / functionality from the user,so that he can see only the essential things
-# Inheritance:acquring data and functions from the parent class to child class
-# polymorphism: same function name but different functionality.
-# __init__():it is a default constructor which is called automatically when an object is created
-            # it is used to assign values to our object(car1).
-            # init stands for initialize.
-            # self:it is used to know which object is currently accessing the data and functions inside the class.
-            # variable is the reference of data, just like that self is a reference to object 
-            # it is used to know which object is working on the data/functions inside a class
-# Class variables vs object variables:
-# syntax:
-""" class classname:
-    # class variable
-    init function:
-        # object variables / instance variables"""
+
+# # write a program to print sum of price of items from a list using a loop
+# price = [120,250,300,150,200]
+# sum = 0
+# for i in price:
+#     sum += i
+# print(sum)
+
+# # count number of even and odd numbers in a list
+
+# numbers = [10,25,30,47,52,61]
+# s=p= 0
+# ec=[]
+# oc=[]
+# for i in numbers:
+#     if i%2 == 0:
+#         s+=1
+#         ec.append(i)
+#     else:
+#         p+=1
+#         oc.append(i)
+# print(ec,oc)
+
+# print(f'Count of even numbers:{s},Count of odd numbers:{p}')
 
 
-"""class car:
-    def __init__(self,brand,model):
-        self.brand = brand
-        self.model = model
 
-    def enginestart(self):
-        print(f'{self.brand} {self.model} the car has started')
+# # find maximum among a sequence of values
 
-    def enginestop(self):
-        print(f'{self.brand} {self.model} the car has stopped')
-
-
-car1=car('Audi','A6')
-car1.enginestart()
-car1.enginestop()
-# print(f'the brand of car is {car1.brand}')
-# print(f'the model of car is {car1.model}')
-
-car2=car('Lamborghini','avendator')
-car2.enginestart()
-car2.enginestop()
-
-# print(f'the brand of car is {car1.brand}')
-# print(f'the model of car is {car1.model}')
+# values = [32,35,30,36,34,31,37]
+# s = values[0]
+# for i in values:
+#     if i > s:
+#         s = i
+# print(s)
 
 
-class movie:
-    def __init__(self,movie,timeline):
-        self.movie = movie
-        self.timeline = timeline
+# # To check whether a given username and password are correct or not and if the user 
+# # enters 3 times wrong 'Your acount is locked' must be printed
+# # username = 'admin' password ='Admin@123'
 
-    def movieyear(self):
-        print(f'{self.movie} is released in the year {self.timeline}')
 
-    def hitmov(self):
-        print(f'{self.movie} is a hit')
+# i = 3
+# while i>=0:
+#     username = input('Enter Username:')
+#     password = input('Enter password:')
+#     if username == "admin" and password == "Admin@123":
+#         print(f'You have unlocked your account')
+#     elif i<=0:
+#         print('Your account is locked')
+#     else:
+#         print(f'you have {i} more attempts')
+#     i -= 1
 
-mov1=movie('bahubali',2017)
-mov1.movieyear()
-mov1.hitmov()
-mov2=movie('ninnukori',2019)
-mov2.hitmov()
-mov3=movie('anthariksham',2015)
+# for i in range(3,-1):
+#     username = input('Enter Username:')
+#     password = input('Enter password:')
+#     if username == "admin" and password == "Admin@123":
+#         print(f'You have unlocked your account')
+#     elif i<=0:
+#         print('Your account is locked')
+#     else:
+#         print(f'you have {i} more attempts')
+#     i -= 1
 
-print(f'the movie name is {mov2.movie} time line is {mov3.timeline}')
+# # write a program to print discount of 100 rs to passengers with seat numbers which are divisible of 3 and 5.
 
-"""
-class cafe:
-    freedish='brownie'
-    def __init__(self,book,food,drinks):
-        self.book = book
-        self.food = food
-        self.drinks = drinks
-    
-    def booktype(self):
-        print(f'lets get the genre of the book {self.book} heres your freedish {self.freedish}')
+# seatNumbers = [5,25,13,15,27,55,11,30]
+# for i in seatNumbers:
+#     if i % 3== 0 and i % 5 == 0:
+#         print(f'Seat no {i} You got a discount of 100 rupees')
+#     else:
+#         print(f'Seat no {i} Not eligible for a discount')
 
-    def foodcusine(self):
-        print(f'lets get the genre of the book {self.food}')
+# to check whether a given item is in your store or not.
+# display whether the item is available or not 
+# items =['apples','banana','capsicums','bread','onions']
+# item = input('Enter your item:')
+# for i in items:
+#     if i == item:
+#         print(f'{item} is available')
+#         continue
+# else:
+#     print(f'{item} is not available')
 
-    def drinkies(self):
-        print(f'lets get the genre of the book {self.drinks}')
+# factorial of a given number
 
-carla = cafe('death note','mushroom 65 ',' blueberry mojito')
-carla.booktype()
+# n = int(input('Enter a number to find factorial:'))
+# for i in range(1,n):
+#     if n > 0:
+#         n = n*i
+# print(n)
 
-class dog:
-    species='mammal' #class variables
-    area='hyderabad'
-    def __init__(self,name,breed):
-        self.name=name
-        self.breed=breed   #these are object variables
+# Print fibbinoci series upto the value n. pass n value using input()
+# 0,1,1,2,3,5,8,13
+# n = n-1 + n-2
+# n = 9
+# n1,n2 = 0,1
+# for i in range(2,n):
+#     n3 = n1+n2
+#     n2 = n1
+#     n1 = n3
+#     print(n3)
 
-    def details(self):
-        print(f'the {self.name} of breed {self.breed} is {self.species} belongs to {self.area}')
-    
 
-dog1=dog('bunty','indie')
-dog1.details()
+# check whether a number is perfect square or not use input()
+# if square root of a number returns a integer then the number is called a perfect square
+#  16 ** 1/2 = 4
 
-dog2=dog('chimtu','Pomerian')
-dog2.details()
+# n = int(input('Enter a number: '))
+# s = (n ** (1/2))
+# print(s)
+# if n%s == 0:
+#     print('perfect square')
+# else:
+#     print('not a Perfect square')
+
+
+# Print sum of digits of a number
+# eg: num = 123 sum = 6
+
+# num = int(input('Enter a number:'))
+# sum = 0
+# while num>0:
+#     digit = num % 10
+#     sum += digit
+#     num //= 10
+# print(sum)
+
+# Find the number of digits in a number
+# eg: num = 156 then count 3
+n = 156
+
+# print reverse of a number, pass input as a integer
+
+# n = int(input('Enter a number:'))
+# rev = 0
+# while n>0:
+#     digit = n % 10
+#     rev = rev *10 + digit
+#     n = n//10
+# print(rev)
+
+# check whether a given number is palindrome or not.
+
+n = int(input('Enter a number:'))
+s = n
+rev = 0
+while n>0:
+    digit = n % 10
+    rev = rev *10 + digit
+    n = n//10
+if s == rev:
+    print('Palindrome')
+else:
+    print('Not a palindrome')
+
+n = int(input("Enter a number: "))
+temp = n
+digits = len(str(n))
+s = 0
+while temp > 0:
+    d = temp % 10
+    s += d ** digits
+    temp //= 10
+if s == n:
+    print(n, "is an Armstrong Number")
+else:
+    print(n, "is not an Armstrong Number")
+
+# n = 12345
+# if n<10:
+#     print('cant swap')
+# else:
+#     last = n % 10
+#     second_last = (n//10)%10
+#     num = n//100 
+#     res = num*100+last*10+second_last
+#     print(res)
+
+# list = [11,2,3,9,2]
+# sec=fir=list[0]
+# for i in list:
+#     if i>fir:
+#         sec=fir
+#         fir=i
+#     elif i < fir and (sec == fir or i > sec):
+#         sec = i
+# print(sec)
+
+
+
+# # list lo 2 nd maximum find second minimum                                                  

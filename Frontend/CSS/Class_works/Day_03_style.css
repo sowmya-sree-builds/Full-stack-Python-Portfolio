@@ -1,0 +1,11 @@
+/* .parent p{
+    color:orangered;
+} */
+
+/* .parent>p{
+    color:orangered;
+} */
+h2+p{
+    color:white;
+    background-color: black;
+}

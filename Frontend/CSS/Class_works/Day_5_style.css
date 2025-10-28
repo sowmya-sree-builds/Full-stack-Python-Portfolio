@@ -1,0 +1,73 @@
+h2{
+    border: 2px solid blue;
+    padding: 20px;
+}
+
+.card1{
+    width: 100px;
+    height: 100px;
+    border: 3px solid blueviolet;
+    margin:5px;
+    display:flex;
+    border-radius:50%;
+}
+
+.card2{
+    width: 100px;
+    height: 100px;
+    border: 3px dotted blueviolet;
+    margin:5px;
+    display:flex;
+    border-radius:20px;
+}
+
+.card3{
+    width: 100px;
+    height: 100px;
+    border: 3px dashed blueviolet;
+    margin:5px;
+    display:flex;
+    border-top-left-radius:50px;
+}
+.card4{
+    width: 100px;
+    height: 100px;
+    border: 3px double blueviolet;
+    margin:5px;
+    display:flex;
+}
+.card5{
+    width: 100px;
+    height: 100px;
+    border: 3px groove yellow;
+    margin:5px;
+    display:flex;
+}
+.card6{
+    width: 100px;
+    height: 100px;
+    border: 3px ridge yellow;
+    margin:5px;
+    display:flex;
+}
+.card7{
+    width: 100px;
+    height: 100px;
+    border: 3px inset yellow;
+    margin:5px;
+    display:flex;
+}
+.card8{
+    width: 100px;
+    height: 100px;
+    border: 3px outset yellow;
+    margin:5px;
+    display:flex;
+}
+.card9{
+    width: 100px;
+    height: 100px;
+    border: 3px none yellow;
+    margin:5px;
+    display:flex;
+}
