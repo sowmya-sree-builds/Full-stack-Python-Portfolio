@@ -22,7 +22,7 @@ h3,p,h2{
 
 /* Basic Selectors */
 
-.card{
+/* .card{
     width: 200px;
     height: 200px;
     border: 2px solid red;
@@ -33,11 +33,5 @@ h3,p,h2{
 }
 #spl{
     background-color:orangered;
-}
+} */
 
-/* Combination selectors/combinators */
-/* 
-
-
-
-*/

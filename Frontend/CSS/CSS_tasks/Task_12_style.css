@@ -12,6 +12,7 @@ span {
       height: 150px;
       border-radius: 50%;
       object-fit: cover;
+      margin:auto
     }
 
     span:nth-child(1) { border: 3px solid black; }
