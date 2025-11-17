@@ -1,4 +1,4 @@
-# Function to check if a number is a neon number
+'''# Function to check if a number is a neon number
 def is_neon(number):
     square = number ** 2
     digit_sum = sum(int(digit) for digit in str(square))
@@ -222,4 +222,73 @@ for p in prime:
 print("Prime:", prime)
 print("Rev:", rev_list)
 
+'''
+
+# A Strong number is a number whose sum of the factorial of digits equals the number itself.
+# For example:
+
+# 145 → 1! + 4! + 5! = 145
+
+# Write a Python program to find all Strong numbers between 1 and 1000.
+# def strong_num(n):
+#     sum = 0
+#     while n >0:
+#         digit = n%10
+#         p=1
+#         for i in range(1,digit+1):
+#             p *= i 
+#         sum += p
+#         n//=10
+#     return sum
+
+# print(strong_num(145))
+
+
+
+# 2. Reverse Each Word in a Sentence
+# Write a Python program to reverse every word in a given sentence without reversing the word order.
+
+# Example Input:
+# Enter a sentence: Python is powerful
+
+# Expected Output:
+# nohtyP si lufrewop
+
+# sentence = 'Python is more powerful'
+
+# word = ''
+# result = ''
+# for i in sentence:
+#     if i != ' ':
+#         word = i + word
+#     else:
+#         result += word + ' '
+#         word=''       
+
+# result += word   
+# print(result)
+
+# 3. Count Letters, Digits, and Special Characters
+# Write a Python program that counts how many letters, digits, and special characters are present in a given string.
+
+# Example Input:
+# Enter a string: Python123@2025!
+
+# Expected Output:
+# Letters: 6
+# Digits: 5
+# Special Characters: 2
+
+
+
+str1 = 'Python123@2025!'
+count_1,count_2,count_3 = 0,0,0
+for i in str1:
+    if 'A' <= i <= 'Z' or 'a' <= i <='z':
+        count_1 +=1
+    elif '0' <=i <= '9':
+        count_2+=1
+    else:
+        count_3+=1
+print(count_1,count_2,count_3)
 

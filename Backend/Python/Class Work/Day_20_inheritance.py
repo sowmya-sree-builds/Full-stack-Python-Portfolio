@@ -1,3 +1,4 @@
+
 class vehicle:
     def fuel(self):
         print('All the vehicles use fuels')
