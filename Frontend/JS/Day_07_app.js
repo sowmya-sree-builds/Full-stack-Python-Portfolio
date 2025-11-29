@@ -86,11 +86,92 @@
 // works only on str, arrays
 
 
-let data = [1,2,3,4,5]
-for (let i of data){
-    console.log(i)
-}
+// let data = [1,2,3,4,5]
+// for (let i of data){
+//     console.log(i)
+// }
 
 
 
 // for loop lo array patters anta 
+
+
+// --------------------------------------Day-8
+// While Loop: it is used when we dont know the no of iterations
+// it is execute the block of statements until the cond is true
+// in for inititalization condition and increment are written in same line but in while its different
+// while - excecutes only when condition is true; if condition is false then there is no output.
+// syntax:
+// initialisation
+// while(cond){
+        // block of statements
+        // final value
+// }
+
+
+// let i = 1;
+// while(i <= 10){                  
+//     console.log(i);
+//     i++;
+// }
+
+
+// do while - it will exceute the block of statements atleast once even if cond the is false.
+
+// let i = 1;
+// do{                  
+//     console.log(i);
+//     i++;
+// }while(i <= 10);
+
+// 1 to 5 f,w,d if cond f,w,d if continue, break at 4
+
+
+// control flow statements 
+
+
+// break - it is used to exit/terminate from the loop
+
+// continue - it skips the current iteration
+
+
+
+// for(let i =0;i<=5;i++){
+//     if(i==3){
+//         continue;
+//     }
+//     console.log(i);
+//     i++;
+// }
+
+
+
+// let i = 1;
+// while (i<=5){
+//     if(i == 3){
+//         break;
+//     }
+//     console.log(i)
+// }
+
+
+// let i = 1;
+// while (i<=5){
+//     i++;
+//     if(i == 3){
+//         continue;
+//     }
+//     console.log(i)
+// }
+// dummy json
+
+
+let i = 2;
+do{
+    i++;
+    if(i == 3){
+        continue;
+    }
+    console.log(i)
+}while (i<=5)
+
