@@ -489,7 +489,7 @@
 #     for col in range(0,s-row):           
 #         print(' ',end=' ')
 #     for col in range(row):
-#         print('*  ',end=' ')
+#         print('*  ',end='         /')
 #     print()
 
 
