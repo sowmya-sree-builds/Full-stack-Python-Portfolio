@@ -96,7 +96,7 @@
 // for loop lo array patters anta 
 
 
-// --------------------------------------Day-8
+// ------------------------------------------------------------Day-8----------------------------------------------------------------
 // While Loop: it is used when we dont know the no of iterations
 // it is execute the block of statements until the cond is true
 // in for inititalization condition and increment are written in same line but in while its different
